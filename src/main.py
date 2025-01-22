@@ -16,16 +16,20 @@ def scrape_wanderlog():
     soup = BeautifulSoup(response.text, "html.parser")
     restaurants = []
 
-    # Extract relevant data
-    for item in soup.select(".poi-container"):  # Update the selector if necessary
+    # Extract relevant data using the provided selectors
+    for item in soup.select(".poi-container"):  
         name = item.select_one(".poi-title").text.strip() if item.select_one(".poi-title") else "N/A"
+        website = item.select_one(".poi-website a")['href'] if item.select_one(".poi-website a") else "N/A"
+        rating = item.select_one(".poi-rating").text.strip() if item.select_one(".poi-rating") else "N/A"
         description = item.select_one(".poi-description").text.strip() if item.select_one(".poi-description") else "N/A"
-        details = item.select_one(".poi-details").text.strip() if item.select_one(".poi-details") else "N/A"
-        
+        phone = item.select_one(".poi-contact").text.strip() if item.select_one(".poi-contact") else "N/A"
+
         restaurants.append({
             "Name": name,
+            "Website": website,
+            "Rating": rating,
             "Description": description,
-            "Details": details
+            "Phone": phone
         })
 
     return restaurants
@@ -44,16 +48,22 @@ def scrape_dining_out():
     soup = BeautifulSoup(response.text, "html.parser")
     restaurants = []
 
-    # Extract relevant data
-    for item in soup.select(".restaurant-list-item"):  # Update the selector if necessary
+    # Extract relevant data using the provided selectors
+    for item in soup.select(".restaurant-list-item"):  
         name = item.select_one(".restaurant-name a").text.strip() if item.select_one(".restaurant-name a") else "N/A"
         address = item.select_one(".restaurant-address").text.strip() if item.select_one(".restaurant-address") else "N/A"
         phone = item.select_one(".restaurant-contact").text.strip() if item.select_one(".restaurant-contact") else "N/A"
+        website = item.select_one(".restaurant-website a")['href'] if item.select_one(".restaurant-website a") else "N/A"
+        rating = item.select_one(".restaurant-rating").text.strip() if item.select_one(".restaurant-rating") else "N/A"
+        description = item.select_one(".restaurant-description").text.strip() if item.select_one(".restaurant-description") else "N/A"
 
         restaurants.append({
             "Name": name,
-            "Address": address,
-            "Phone": phone
+            "Website": website,
+            "Rating": rating,
+            "Description": description,
+            "Phone": phone,
+            "Address": address
         })
 
     return restaurants
