@@ -1,0 +1,1255 @@
+﻿#bodycontent {
+    position:relative;
+    max-width:1400px;
+    min-width:1008px;
+    margin:0px auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+#bodycontent::before
+{
+    content:'';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 50%;
+    -ms-transform: translate(-200px,0px);
+    -webkit-transform: translate(-200px,0px);
+    transform: translate(-200px, 0px); 
+    background-color: rgba(227,228,242,0.5);
+    border-right: 2px solid rgba(223,224,224,0.5);
+}
+#bodycontent div.headcontent
+{
+    position: relative;
+    width:100%;
+    height:350px;
+}
+/*
+#bodycontent div.headcontent::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 350px;
+	background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0));
+    background: -o-linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0));
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0));
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0));
+	display: block;
+    z-index: 0;
+}
+*/
+#bodycontent div.pagewrapper
+{
+    width:1008px;
+    margin:0px auto;
+    display:table;
+}
+#bodycontent div.searchheadleft
+{
+    display:table-cell;
+    position: relative;
+    width:304px;
+    height:350px;
+}
+#bodycontent div.searchheadleftcontent
+{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    display:table;
+}
+
+#bodycontent div.searchheadleftcontent > h3
+{
+    color: #2b337b;
+    font-size:200%;
+    margin-bottom:20px;
+}
+#LocSearch {
+    position: relative;
+    height: 44px;
+    width: 259px;
+    border: 0px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom:10px;
+}
+#FoodtypeBtn {
+    position: relative;
+    margin-bottom: 10px;
+    width: 279px;
+    height: 44px;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 5px;
+    background-color: white;
+}
+#FoodtypeBtn > span {
+    line-height: 44px;
+    padding-left: 10px;
+}
+#FoodtypeBtn::after
+{
+	content:'';
+    position: absolute;
+	width: 13px;
+	height: 9px;
+	right: 5px;
+	top:19px;
+	background: url(../images/DOSprite.png) -34px -90px;
+}
+#SearchFoodtypesWrapper
+{
+	position:absolute;
+	max-height:250px;
+	top:0px;
+	left:0px;
+    width:279px;
+	text-align: left;
+	overflow-y : auto;
+	overflow-x: hidden;
+	background-color:white;
+	box-shadow: 3px 3px 8px #999; /*shadow for CSS3 capable browsers.*/
+	-webkit-box-shadow: 3px 3px 8px #999;
+	-moz-box-shadow: 3px 3px 8px #999;
+	border-radius:0px 0px 5px 5px;
+    z-index:10;
+}
+#SearchFoodtypesWrapper > div > input[type="radio"]
+{
+    display:none;
+}
+#SearchFoodtypesWrapper > div > input[type="radio"]:checked + label > span.label
+{
+	color:#46b79b;
+	font-weight:bolder;
+}
+#SearchFoodtypesWrapper > div > label > span.label
+{
+	padding: 7px 5px 7px 10px;
+	cursor: pointer;
+	background-color:white;
+    display:block;
+}
+#SearchFoodtypesWrapper > div > label > span.label:hover 
+{
+	background-color:#edeef2;
+}
+#MainSearchBtn,#FacSearchBtn {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 44px;
+    width: 279px;
+    border-radius: 5px;
+    font-size: 120%;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid #8dfcdc;
+    border-bottom: 1px solid #2e776a;
+    background: #43b89b; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(0deg, #41a895, #46bd9f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(0deg, #41a895, #46bd9f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(0deg, #41a895, #46bd9f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(0deg, #41a895, #46bd9f); /* Standard syntax */
+}
+#FacSearchBtn 
+{
+    margin-bottom: 0px;
+}
+#bodycontent div.searchheadright
+{
+    display:table-cell;
+    position: relative;
+    width:704px;
+    height:350px;
+}
+#bodycontent div.searchheadrightcontent
+{
+    position:absolute;
+    bottom:0px;
+    left:0px; 
+    margin: 37px 0px 37px 25px;
+}
+#bodycontent div.searchheadrightcontent > div, #bodycontent div.searchheadrightcontent > span, #bodycontent div.searchheadrightcontent > h1
+{
+    color:#fff;
+	text-shadow: -1px -1px 2px #666, 1px -1px 2px #666, -1px 1px 2px #666, 1px 1px 2px #666;
+}
+#bodycontent div.searchheadrightcontent > h1 
+{
+    line-height: 200%;
+    font-size: 200%;
+}
+#bodycontent div.PageBreadCrumbWrapper 
+{
+    padding: 5px 15px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #e1e1e1;
+    display:inline-block;
+}
+#bodycontent ul.PageBreadCrumb
+{
+    list-style-type: none;
+}
+#bodycontent ul.PageBreadCrumb > li
+{
+    float:left;
+}
+#bodycontent ul.PageBreadCrumb > li > a
+{
+    color:#2b337b;
+    text-decoration:none;
+    font-weight:bold;
+    text-shadow:none;
+} 
+#bodycontent ul.PageBreadCrumb > li:nth-child(n+2)::before
+{
+    content:'>';
+    margin:0px 7px;
+    color:#2b337b;
+    text-shadow:none;
+}
+div.mainbodyleft 
+{
+    display: table-cell;
+    position:relative;
+    width: 304px;
+    vertical-align:top;
+}
+div.mainbodyright
+{
+    display: table-cell;
+    position:relative;
+    width: 704px;
+    vertical-align:top;
+}
+#bodycontent div.resultwrapper
+{
+    display: table;
+	width: 679px;
+    border:1px solid #999;
+    border-radius:5px;
+    background-color:#fff;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+#bodycontent div.resultrowtop,#bodycontent div.resultrowbottom
+{
+    display:table;
+    width: 679px;
+}
+#bodycontent div.resultrowtop
+{
+    border-bottom:1px solid #999;
+    height: 200px;
+    position:relative;
+}
+#bodycontent div.resultwrapper div.resultdetail {
+    display: table-cell;
+    vertical-align:top;
+    line-height: 200%;
+    padding: 20px 20px 0px 20px;
+}
+#bodycontent div.resultwrapper div.resultdetailtopleft
+{
+    display: table-cell;
+    vertical-align:top;
+    width: 259px;
+}
+#bodycontent div.resultwrapper div.resultdetailtopright
+{
+    display: table-cell;
+    vertical-align:top;
+    width: 80px;
+}
+#bodycontent div.resultwrapper div.avgpricelabel {
+    display: block;
+    width: 80px;
+    text-align: center;
+    font-size:90%
+}
+#bodycontent div.resultwrapper div.avgpriceidx {
+    display: block;
+    width: 78px;
+    line-height: 37px;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 19px;
+}
+#bodycontent div.resultwrapper a.memberName {
+    display: block;
+    text-decoration:none;
+    max-width: 259px;
+    color:#2b337b;
+    font-size:120%;
+    font-weight:bold;
+}
+#bodycontent div.resultwrapper div.memberLoc 
+{
+
+}
+#bodycontent div.resultwrapper a.memberLoc {
+    text-decoration:none;
+    max-width: 259px;
+}
+
+#bodycontent div.resultwrapper div.resultdetailbottom
+{
+    display: block;
+    padding: 20px 20px 0px 20px;
+}
+#bodycontent div.resultwrapper div.memberFoodtypes {
+    display:block;
+    float:left;
+    width: 234px;
+    margin: 10px 0px;
+}
+#bodycontent div.resultwrapper div.memberFoodtypes span.mainfoodtype
+{
+    font-weight:bold;
+}
+#bodycontent div.resultwrapper div.memberFoodtypes span.otherfoodtypes
+{
+    font-weight:normal;
+}
+#bodycontent div.resultwrapper span.guestratings
+{
+    width:110px;
+    display:inline-block;
+}
+#bodycontent div.resultwrapper span.starrating 
+{
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 16px;
+}
+#bodycontent div.resultwrapper span.starrating span.greystar 
+{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 16px;
+    width: 110px;
+    background: url(../images/DOSprite.png) -180px -50px;
+}
+#bodycontent div.resultwrapper span.starrating span.greenstar {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 16px;
+    background: url(../images/DOSprite.png) -180px -34px;
+}
+#bodycontent div.resultwrapper div.viewmember
+{
+    float:right;
+    margin:10px 10px 10px 0px;
+    padding:9px 12px 10px 12px;
+    color:#fff;
+    /*background-color:#43b89b;*/
+    border-top: 1px solid #8dfcdc;
+    border-bottom: 1px solid #2e776a;
+    background: #43b89b; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(0deg, #41a895, #46bd9f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(0deg, #41a895, #46bd9f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(0deg, #41a895, #46bd9f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(0deg, #41a895, #46bd9f); /* Standard syntax */
+    cursor:pointer;
+    border-radius:5px;
+    font-weight:bold;
+}
+#bodycontent div.resultwrapper div.memberfacilities
+{
+    float:left;
+    max-width:442px;
+    margin:18px 10px;
+    overflow:hidden;
+}
+#bodycontent div.resultwrapper div.memberfacilities > span {
+    margin-right: 7px;
+}
+#bodycontent div.resultwrapper div.resultpic 
+{
+    display: table-cell;
+    position:relative;
+    width: 300px;
+    height: 200px;
+    border-top-left-radius:5px;
+    overflow:hidden;
+    cursor:pointer;
+}
+#bodycontent div.resultwrapper div.resultpic > div
+{
+    width: 300px;
+    height: 200px;
+    background-repeat:no-repeat;
+    display:block;
+    border-top-left-radius: 3px;
+}
+#bodycontent div.resultwrapper div.resultpic > img
+{
+    display:block;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#bodycontent div.resultwrapper div.resultpic > img.fixwidth
+{
+    width:300px;
+}
+#bodycontent div.resultwrapper div.resultpic > img.fixheight
+{
+    height:200px;
+}
+#bodycontent div.resultwrapper div.resultpic > div.fixwidth
+{
+    background-size: 300px auto;
+	background-position-y: 50%;
+}
+#bodycontent div.resultwrapper div.resultpic > div.fixheight
+{
+    background-size: auto 200px;
+}
+#bodycontent div.resultwrapper div.resultrowtop span.distance
+{
+    position: absolute;
+    z-index:10;
+    top: -5px;
+    left: -5px;
+    padding: 7px 15px;
+    color: #fff;
+    font-weight: bold;
+    background: #2c337b;
+    background: -webkit-linear-gradient(0deg, #2c337b, #585d94);
+    background: -o-linear-gradient(0deg, #2c337b, #585d94);
+    background: -moz-linear-gradient(0deg, #2c337b, #585d94);
+    background: linear-gradient(0deg, #2c337b, #585d94);
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px #333;
+    -webkit-box-shadow: 3px 3px 8px #333;
+    -moz-box-shadow: 3px 3px 8px #333;
+}
+#bodycontent span.facilityiconspecials
+{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    background: url(../images/DOSprite.png) -656px -32px;
+}
+#bodycontent span.facilityiconliveentertainment
+{
+    display: inline-block;
+    width:14px;
+    height:24px;
+    background: url(../images/DOSprite.png) -490px -0px;
+}
+#bodycontent span.facilityiconconference
+{
+    display: inline-block;
+    width:19px;
+    height:19px;
+    background: url(../images/DOSprite.png) -636px -33px;
+}
+#bodycontent span.facilityicon21
+{
+    /*Markets*/
+    display: inline-block;
+    width:20px;
+    height:20px;
+    background: url(../images/DOSprite.png) -488px -62px;
+}
+#bodycontent span.facilityicon4
+{
+    /*Take out*/
+    display: inline-block;
+    width:19px;
+    height:21px;
+    background: url(../images/DOSprite.png) -522px -3px;
+}
+#bodycontent span.facilityicon9
+{
+    /*Secure Parking*/
+    display: inline-block;
+    width:18px;
+    height:18px;
+    background: url(../images/DOSprite.png) -543px -6px;
+}
+#bodycontent span.facilityicon18
+{
+    /*Child Friendly*/
+    display: inline-block;
+    width:20px;
+    height:22px;
+    background: url(../images/DOSprite.png) -562px -2px;
+}
+#bodycontent span.facilityicon5
+{
+    /*TV/Sports*/
+    display: inline-block;
+    width:20px;
+    height:20px;
+    background: url(../images/DOSprite.png) -583px -4px;
+}
+#bodycontent span.facilityicon10
+{
+    /*Outside Seating*/
+    display: inline-block;
+    width:18px;
+    height:18px;
+    background: url(../images/DOSprite.png) -605px -6px;
+}
+#bodycontent span.facilityicon8
+{
+    /*Fireplace*/
+    display: inline-block;
+    width:18px;
+    height:23px;
+    background: url(../images/DOSprite.png) -625px -1px;
+}
+#bodycontent span.facilityicon2
+{
+    /*Dancefloor*/
+    display: inline-block;
+    width:22px;
+    height:21px;
+    background: url(../images/DOSprite.png) -643px -3px;
+}
+#bodycontent span.facilityicon7
+{
+    /*Disabled*/
+    display: inline-block;
+    width:20px;
+    height:21px;
+    background: url(../images/DOSprite.png) -489px -31px;
+}
+#bodycontent span.facilityicon1
+{
+    /*Smoking Section*/
+    display: inline-block;
+    width:20px;
+    height:19px;
+    background: url(../images/DOSprite.png) -509px -33px;
+}
+#bodycontent span.facilityicon12
+{
+    /*Functions*/
+    display: inline-block;
+    width:23px;
+    height:19px;
+    background: url(../images/DOSprite.png) -529px -33px;
+}
+#bodycontent span.facilityicon19
+{
+    /*Wi-Fi*/
+    display: inline-block;
+    width:18px;
+    height:14px;
+    background: url(../images/DOSprite.png) -553px -38px;
+}
+#bodycontent span.facilityicon15
+{
+    /*Weddings*/
+    display: inline-block;
+    width:18px;
+    height:19px;
+    background: url(../images/DOSprite.png) -573px -33px;
+}
+#bodycontent span.facilityicon14
+{
+    /*Accommodation*/
+    display: inline-block;
+    width:22px;
+    height:17px;
+    background: url(../images/DOSprite.png) -593px -35px;
+}
+#bodycontent span.facilityicon17
+{
+    /*Outside Catering*/
+    display: inline-block;
+    width:21px;
+    height:21px;
+    background: url(../images/DOSprite.png) -615px -31px;
+}
+#bodycontent span.facilityicon20
+{
+    /*Load Shedding*/
+    display: inline-block;
+    width:12px;
+    height:20px;
+    background: url(../images/DOSprite.png) -509px -4px;
+}
+#bodycontent span.facilityicon22
+{
+    /*Pet Friendly*/
+    display: inline-block;
+    width:21px;
+    height:20px;
+    background: url(../images/DOSprite.png) -665px -4px;
+}
+#bodycontent span.facilityicon23
+{
+    display: inline-block;
+    width:22px;
+    height:20px;
+    background: url(../images/DOSprite.png) -680px -32px;
+}
+#bodycontent div.resultwrapper div.beenhere
+{
+    float:right;
+    margin:20px 10px 20px 0px;
+}
+#bodycontent div.resultwrapper div.beenhere input[type="checkbox"] 
+{
+    display:none;
+}
+#bodycontent div.resultwrapper div.beenhere span.checkbox
+{
+	border: 1px solid #999;
+	border-radius: 2px;
+	float:left;
+    display:inline-block;
+    width:15px;
+    height:11px;
+    cursor:pointer;
+    margin:1px 5px;
+}
+#bodycontent div.resultwrapper div.beenhere > input[type="checkbox"]:checked + label > span.checkbox
+{
+    background: #fff url(../images/DOSprite.png) -72px -91px no-repeat;
+}
+
+#bodycontent div.SortOrderLabel
+{
+    float:right;
+    line-height:44px;
+    margin: 20px 7px 25px 7px;
+}
+#SortOrderBtn {
+    position: relative;
+    margin: 20px 0px 25px 0px;
+    float: right;
+    width: 200px;
+    height: 44px;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 5px;
+    border:1px solid #e1e1e1;
+    background-color: white;
+}
+#SortOrderBtn > span {
+    line-height: 44px;
+    padding-left: 10px;
+}
+#SortOrderBtn::after
+{
+	content:'';
+    position: absolute;
+	width: 13px;
+	height: 9px;
+	right: 5px;
+	top:19px;
+	background: url(../images/DOSprite.png) -34px -90px;
+}
+#SearchSortOrderWrapper
+{
+	position:absolute;
+	max-height:250px;
+	top:0px;
+	left:0px;
+    width:200px;
+	text-align: left;
+	overflow-y : auto;
+	overflow-x: hidden;
+	background-color:white;
+	box-shadow: 3px 3px 8px #999; /*shadow for CSS3 capable browsers.*/
+	-webkit-box-shadow: 3px 3px 8px #999;
+	-moz-box-shadow: 3px 3px 8px #999;
+	border-radius:0px 0px 5px 5px;
+    z-index:10;
+}
+#SearchSortOrderWrapper > div > input[type="radio"]
+{
+    display:none;
+}
+#SearchSortOrderWrapper > div > input[type="radio"]:checked + label > span.label
+{
+	color:#46b79b;
+	font-weight:bolder;
+}
+#SearchSortOrderWrapper > div > label > span.label
+{
+	padding: 7px 5px 7px 10px;
+	cursor: pointer;
+	background-color:white;
+    display:block;
+}
+#SearchSortOrderWrapper > div > label > span.label:hover 
+{
+	background-color:#edeef2;
+}
+#bodycontent div.mainbodyrighthead
+{
+    margin-left:25px;
+}
+#bodycontent div.listview
+{
+    line-height:44px;
+    display:inline-block;
+    color: #2b337b;
+    margin: 20px 7px 25px 7px;
+}
+#bodycontent div.listview::before {
+    content:'';
+    background: url(../images/DOSprite.png) -290px -112px;
+    width:21px;
+    height:19px;
+    display: inline-block;
+    margin-right:10px;
+    vertical-align: middle;
+}
+#bodycontent div.mapview
+{
+    line-height:44px;
+    display:inline-block;
+    margin: 20px 7px 25px 7px;
+    cursor:pointer;
+    text-decoration:none;
+}
+#bodycontent div.mapview::before
+{
+    content:'';
+    background: url(../images/DOSprite.png) -332px -86px;
+    width:19px;
+    height:20px;
+    display: inline-block;
+    margin-right:10px;
+    vertical-align: middle;
+}
+#bodycontent div.filter {
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px 25px 20px 0px;
+}
+#bodycontent div.filtertitle {
+    padding: 20px 10px;
+    background-color: #d7d6db;
+    border-radius: 5px 5px 0px 0px;
+    font-weight: bolder;
+    font-size: 120%;
+    position: relative;
+}
+#bodycontent div.facilities {
+    overflow: hidden;
+}
+#bodycontent div.facilities > div {
+    clear: both;
+    line-height: 30px;
+}
+#bodycontent div.facilities > div > label > span.label {
+    cursor: pointer;
+    display:block;
+    padding: 0px 35px;
+}
+#bodycontent div.facilities > div:hover
+{
+    background-color: #edeef2;
+}
+#bodycontent div.facilities > div > input[type="checkbox"] {
+    display: none;
+}
+#bodycontent div.facilities > div > input[type="checkbox"] + label > span.checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 11px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 7px 10px;
+    float: right;
+}
+#bodycontent div.facilities > div > input[type="checkbox"]:checked + label > span.checkbox {
+    background: #fff url(../images/DOSprite.png) -72px -91px no-repeat;
+}
+#bodycontent div.facilities > div > input[type="checkbox"]:checked + label > span.label {
+    color: #46b79b;
+    font-weight: bolder;
+}
+#bodycontent div.facilities span[class*="facilityicon"]
+{
+    float:left;
+    margin:5px 0px 5px 5px;
+}
+#bodycontent div.quicklinks
+{
+    clear: both;
+    line-height: 30px;
+}
+#bodycontent div.quicklinks:hover
+{
+    background-color: #edeef2;
+}
+#bodycontent div.quicklinks > a 
+{
+    display:block;
+    padding: 0px 20px;
+    text-decoration:none;
+}
+#bodycontent div.quicklinks > span.more, #bodycontent div.quicklinks > span.less,#bodycontent div.collections > span.more, #bodycontent div.collections > span.less
+{
+    color: #46b79b;
+    display:block;
+    padding: 0px 20px;
+    cursor:pointer;
+}
+#bodycontent div.quicklinks span.subloc 
+{
+    color: #46b79b;
+    margin-right: 10px;
+}
+#bodycontent ul.pagingbuttons
+{
+    list-style-type: none;
+    margin:40px 0px 40px 25px;
+}
+#bodycontent ul.pagingbuttons > li
+{
+    display: inline-block;
+    border:1px solid #999;
+    background:#fff;
+    margin-right: 2px;
+}
+#bodycontent ul.pagingbuttons > li:hover
+{
+    background-color: #edeef2;
+}
+#bodycontent ul.pagingbuttons > li.currentpage
+{
+    background:#43b89b;
+}
+#bodycontent ul.pagingbuttons > li > a
+{
+    padding: 12px 18px;
+    line-height: 40px;
+    cursor:pointer;
+    text-decoration:none;
+    font-weight:bold;
+}
+#bodycontent ul.pagingbuttons > li.big > a
+{
+    padding: 12px 25px;
+}
+#bodycontent ul.pagingbuttons > li.currentpage > a
+{
+    cursor:text;
+    color:#fff;
+    font-weight:bold;
+}
+#bodycontent div.otherrest {
+    width: 679px;
+    margin: 80px 0px 80px 25px;
+}
+#bodycontent div.otherresttitle 
+{
+    text-align: center;
+    font-weight: bold;
+}
+#bodycontent div.otherdesc 
+{
+    margin: 0 10%;
+    text-align:center;
+}
+#bodycontent div.specialsheading 
+{
+    position: relative;
+    display: block;
+    width: 280px;
+    height: 107px;
+}
+#bodycontent div.specialsheading::after
+{
+    content:'';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 280px;
+    height: 22px;
+    /*background-size: cover;*/
+    background: url(../images/DOSprite.png) 0px -117px no-repeat;
+    z-index: -10
+}
+#bodycontent div.specialsheading h2
+{
+    padding-top: 40px;
+    padding-left:50px;
+    color:#424242;
+    font-size: 140%;
+}
+#bodycontent div.specialsheading h2::before
+{
+    content:'';
+    width:32px;
+    height:32px;
+    background: url(../images/DOSprite.png) -182px 0px no-repeat;
+    position:absolute;
+    left: 0px;
+    top: 35px;
+}
+#bodycontent div.SpecialWrapper
+{
+	border-bottom: 1px solid #e2e4e3;
+	padding: 10px 0px;
+    margin-right: 15px;
+	cursor:pointer;
+}
+#bodycontent div.SpecialWrapper > div
+{
+	font-weight:bolder;
+	line-height: 150%;
+	font-size:110%;
+}
+#bodycontent div.SpecialWrapper > a
+{
+	color:#46b79b;
+	font-weight:bolder;
+	line-height: 150%;
+	font-size:100%;
+	text-decoration:none;
+}
+#bodycontent div.viewall
+{
+	font-weight:bolder;
+	line-height: 200%;
+	text-align:right;
+    margin-right:15px;
+}
+#bodycontent a.viewall
+{
+	text-decoration:none;
+	color:#46b79b;
+}
+#bodycontent div.reviewsheading 
+{
+    position: relative;
+    display: block;
+    width: 280px;
+    height: 107px;
+}
+#bodycontent div.reviewsheading::after
+{
+    content:'';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 280px;
+    height: 22px;
+    /*background-size: cover;*/
+    background: url(../images/DOSprite.png) 0px -117px no-repeat;
+    z-index:-10;
+}
+#bodycontent div.reviewsheading h2
+{
+    padding-top: 40px;
+    padding-left:50px;
+    color:#424242;
+    font-size: 140%;
+}
+#bodycontent div.reviewsheading h2::before
+{
+    content:'';
+    width: 36px;
+    height: 33px;
+    background: url(../images/DOSprite.png) -229px 0px no-repeat;
+    position:absolute;
+    left: 0px;
+    top: 35px;
+}
+#bodycontent div.regionreview {
+    line-height: 150%;
+    font-weight: bolder;
+    margin-right: 15px;
+}
+
+#bodycontent div.ReviewWrapper {
+    border-bottom: 1px solid #e2e4e3;
+    padding: 10px 0px;
+    margin-right: 15px;
+	max-width: 287px;
+    overflow: hidden;
+}
+#bodycontent div.ReviewWrapper > div, #bodycontent div.ReviewWrapper > a {
+    clear: both;
+    padding-top: 10px;
+    line-height: 150%;
+    text-decoration:none;
+    display: block;
+}
+#bodycontent div.ReviewWrapper div.ReviewerPic {
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-color: white !important;
+    /* background-size: contain !important; */
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border-radius: 5px;
+}
+#bodycontent div.ReviewWrapper div.ReviewerDetail {
+    width: 214px;
+    padding-left: 15px;
+    float: left;
+}
+#bodycontent div.ReviewWrapper div.ReviewerName {
+    font-weight: bolder;
+}
+#bodycontent div.ReviewWrapper span.StarRating {
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 16px;
+    margin: 1px 2px;
+}
+#bodycontent div.ReviewWrapper span.greyStar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 16px;
+    width: 110px;
+    background: url(../images/DOSprite.png) -180px -50px;
+    zoom: 0.93;
+    -moz-transform: scale(0.93);
+    -moz-transform-origin: 0% 50%;
+}
+#bodycontent div.ReviewWrapper span.greenStar {
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    height: 16px;
+    background: url(../images/DOSprite.png) -180px -34px;
+    zoom: 0.93;
+    -moz-transform: scale(0.93);
+    -moz-transform-origin: 0% 50%;
+}
+#bodycontent div.ReviewWrapper div.readfullreview {
+    font-weight: bolder;
+    text-align: left;
+}
+#bodycontent div.ReviewWrapper a.readfullreview {
+    text-decoration: none;
+    color: #46b79b;
+}
+#bodycontent div.CollectionTags
+{
+    /*padding: 0px 20px;*/
+    text-align:right;
+    color:#ffd464;
+    position:relative;
+    margin-top: 8px;
+    /*margin-left: 275px;*/
+}
+#bodycontent div.CollectionTags::before
+{
+    content: '';
+    width: 36px;
+    height: 33px;
+    background: url(../images/DOSprite.png) -183px -67px no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    zoom: 0.73;
+    -moz-transform: scale(0.73);
+    -moz-transform-origin: 0% 50%;
+}
+#bodycontent div[class*="CollectionDescr"]
+{
+    margin-left:25px;
+    margin-bottom:20px;
+    width: 679px;
+    border: 1px solid #ffd464;
+    border-radius: 5px;
+    background-color: #fff;
+}
+#bodycontent div[class*="CollectionDescr"] div
+{
+    padding: 20px 50px 20px 85px;
+    position: relative;
+}
+#bodycontent div[class*="CollectionDescr"] div::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    -ms-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+#bodycontent div[class*="CollectionDescr"] div::after
+{
+    content: '';
+    width: 36px;
+    height: 33px;
+    background: url(../images/DOSprite.png) -183px -67px no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    -ms-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+#bodycontent div.CollectionDescr10 div::before
+{
+    background: url(../images/DOSprite.png) -303px -226px no-repeat;
+}
+#bodycontent div.collectionsheading 
+{
+    position: relative;
+    display: block;
+    width: 280px;
+    height: 107px;
+}
+#bodycontent div.collectionsheading::after
+{
+    content:'';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 280px;
+    height: 22px;
+    /*background-size: cover;*/
+    background: url(../images/DOSprite.png) 0px -117px no-repeat;
+    z-index:-10;
+}
+#bodycontent div.collectionsheading h2
+{
+    padding-top: 40px;
+    padding-left:50px;
+    color:#424242;
+    font-size: 140%;
+}
+#bodycontent div.collectionsheading h2::before
+{
+    content:'';
+    width: 36px;
+    height: 33px;
+    background: url(../images/DOSprite.png) -183px -67px no-repeat;
+    position:absolute;
+    left: 0px;
+    top: 35px;
+}
+#bodycontent div[class*="collectionicon"]
+{
+    position: relative;
+    line-height: 60px;
+    padding-left: 70px;
+    font-weight: bolder;
+    font-size: 110%;
+    margin-bottom: 10px;
+    cursor:pointer;
+}
+#bodycontent div[class*="collectionicon"] a
+{
+    text-decoration:none;
+}
+
+#bodycontent div[class*="collectionicon"]::before 
+{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+#bodycontent div.collectionicon17::before,#bodycontent div.CollectionDescr17 div::before
+{
+    background: url(../images/DOSprite.png) -364px -287px no-repeat;
+}
+#bodycontent div.collectionicon23::before,#bodycontent div.CollectionDescr23 div::before 
+{
+    background: url(../images/DOSprite.png) -669px -165px no-repeat;
+}
+#bodycontent div.collectionicon1::before,#bodycontent div.CollectionDescr1 div::before
+{
+    background: url(../images/DOSprite.png) -303px -165px no-repeat;
+}
+#bodycontent div.collectionicon13::before,#bodycontent div.CollectionDescr13 div::before
+{
+    background: url(../images/DOSprite.png) -486px -226px no-repeat;
+}
+#bodycontent div.collectionicon5::before,#bodycontent div.CollectionDescr5 div::before
+{
+    background: url(../images/DOSprite.png) -547px -165px no-repeat;
+}
+#bodycontent div.collectionicon11::before,#bodycontent div.CollectionDescr11 div::before
+{
+    background: url(../images/DOSprite.png) -364px -226px no-repeat;
+}
+#bodycontent div.collectionicon4::before,#bodycontent div.CollectionDescr4 div::before
+{
+    background: url(../images/DOSprite.png) -486px -165px no-repeat;
+}
+#bodycontent div.collectionicon16::before,#bodycontent div.CollectionDescr16 div::before
+{
+    background: url(../images/DOSprite.png) -303px -287px no-repeat;
+}
+#bodycontent div.collectionicon19::before,#bodycontent div.CollectionDescr19 div::before 
+{
+    background: url(../images/DOSprite.png) -486px -287px no-repeat;
+}
+#bodycontent div.collectionicon22::before,#bodycontent div.CollectionDescr22 div::before
+{
+    background: url(../images/DOSprite.png) -608px -287px no-repeat;
+}
+#bodycontent div.collectionicon15::before,#bodycontent div.CollectionDescr15 div::before
+{
+    background: url(../images/DOSprite.png) -608px -226px no-repeat;
+}
+#bodycontent div.collectionicon18::before,#bodycontent div.CollectionDescr18 div::before
+{
+    background: url(../images/DOSprite.png) -425px -287px no-repeat;
+}
+#bodycontent div.collectionicon3::before,#bodycontent div.CollectionDescr3 div::before
+{
+    background: url(../images/DOSprite.png) -425px -165px no-repeat;
+}
+#bodycontent div.collectionicon6::before,#bodycontent div.CollectionDescr6 div::before
+{
+    background: url(../images/DOSprite.png) -608px -165px no-repeat;
+}
+#bodycontent div.collectionicon12::before,#bodycontent div.CollectionDescr12 div::before
+{
+    background: url(../images/DOSprite.png) -425px -226px no-repeat;
+}
+#bodycontent div.collectionicon21::before,#bodycontent div.CollectionDescr21 div::before
+{
+    background: url(../images/DOSprite.png) -547px -287px no-repeat;
+}
+#bodycontent div.collectionicon14::before,#bodycontent div.CollectionDescr14 div::before
+{
+    background: url(../images/DOSprite.png) -547px -226px no-repeat;
+}
+#bodycontent div.collectionicon10::before,#bodycontent div.CollectionDescr10 div::before
+{
+    background: url(../images/DOSprite.png) -303px -226px no-repeat;
+}
+#bodycontent div.collectionicon2::before,#bodycontent div.CollectionDescr2 div::before
+{
+    background: url(../images/DOSprite.png) -364px -165px no-repeat;
+}
