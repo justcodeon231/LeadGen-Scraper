@@ -1,8 +1,0 @@
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/l/font?kit=KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bWmWmh6Z2g9HvApRuxIbgKmvNYSfNA&skey=a0a0114a1dcab3ac&v=v47) format('woff2');
-}
