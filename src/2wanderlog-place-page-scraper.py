@@ -38,6 +38,10 @@ def scrape_restaurant_page(url):
         wanderlog_ranking = wanderlog_ranking_div.find('span', class_='font-weight-bold').text.strip() if wanderlog_ranking_div else 'N/A'
         wanderlog_list_title = wanderlog_ranking_div.text.replace(wanderlog_ranking, '').strip() if wanderlog_ranking_div else 'N/A'
 
+        # Extract "About" Section
+        about_div = soup.find('div', text=lambda x: x and "About" in x)
+        about_text = about_div.get_text(strip=True).replace("About", "") if about_div else 'N/A'
+
         # Example data extraction for additional info
         name = soup.find('h1').text.strip() if soup.find('h1') else 'N/A'  # Restaurant name
         address = soup.find('div', class_='address-class').text.strip() if soup.find('div', class_='address-class') else 'N/A'
@@ -53,6 +57,7 @@ def scrape_restaurant_page(url):
             'TripAdvisor Ratings Count': tripadvisor_how_many,
             'Wanderlog Ranking': wanderlog_ranking,
             'Wanderlog List Title': wanderlog_list_title,
+            'About': about_text,
             'Address': address,
             'Phone': phone,
             'Description': description,
