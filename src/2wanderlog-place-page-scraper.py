@@ -4,6 +4,7 @@ import pandas as pd
 import logging
 import time
 from datetime import datetime
+import os
 
 # Setup logging
 logging.basicConfig(
@@ -15,8 +16,9 @@ logging.basicConfig(
 # Load CSV file
 def load_restaurant_links(csv_file):
     try:
-        restaurants = pd.read_csv(csv_file)
-        logging.info(f"Loaded {len(restaurants)} restaurant links from {csv_file}")
+        csv_path = os.path.join('output', csv_file)
+        restaurants = pd.read_csv(csv_path)
+        logging.info(f"Loaded {len(restaurants)} restaurant links from {csv_path}")
         return restaurants
     except Exception as e:
         logging.error(f"Error loading CSV: {e}")

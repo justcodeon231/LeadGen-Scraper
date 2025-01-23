@@ -38,11 +38,30 @@ def save_to_csv(data):
     filename = input("Please enter the filename to save the results (with .csv extension): ")
     os.makedirs('output', exist_ok=True)
     filepath = os.path.join('output', filename)
-    with open(filepath, 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=['text', 'href'])
-        writer.writeheader()
-        writer.writerows(data)
-    print(f"Results saved to {filepath}")
+    
+    # Read existing data
+    existing_data = []
+    if os.path.exists(filepath):
+        with open(filepath, 'r', newline='', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            existing_data = list(reader)
+    
+    # Convert existing data to a set of tuples for easy comparison
+    existing_set = {(row['text'], row['href']) for row in existing_data}
+    
+    # Filter out duplicates
+    new_data = [row for row in data if (row['text'], row['href']) not in existing_set]
+    
+    # Append new data to the existing data
+    if new_data:
+        with open(filepath, 'a', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=['text', 'href'])
+            if not existing_data:
+                writer.writeheader()
+            writer.writerows(new_data)
+        print(f"New results added to {filepath}")
+    else:
+        print("No new data to add.")
 
 def scrape_website(url, selector):
     page_content = fetch_page(url)
@@ -58,3 +77,10 @@ if __name__ == '__main__':
     target_url = input("Please enter the URL to scrape: ")
     selector = '.row.mt-n2.mx-n1 .col-6.col-sm-4.col-md-4.col-lg-4.col-xl-4.mt-2.px-1 a'
     scrape_website(target_url, selector)
+    
+    # Run the cleanup script
+    cleanup_script = os.path.join('src', 'output', 'remove-dupes.py')
+    if os.path.exists(cleanup_script):
+        os.system(f'python {cleanup_script}')
+    else:
+        print(f"Cleanup script {cleanup_script} not found.")
