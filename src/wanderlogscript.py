@@ -28,10 +28,12 @@ for div in restaurant_divs:
 # Convert to DataFrame
 df = pd.DataFrame(restaurant_data)
 
-# Save to CSV
+# Save to CSV && Excel
 csv_filename = 'wanderlog_restaurants.csv'
+xlsx_filename = 'wanderlog_restaurants.xlsx'
 df.to_csv(csv_filename, index=False)
-print(f"Data saved to {csv_filename}")
+df.to_excel(xlsx_filename, index=False)
+print(f"Data saved to {csv_filename} and {xlsx_filename}")
 
 # Print sample data
 print(df.head())
