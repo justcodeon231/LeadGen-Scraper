@@ -39,6 +39,8 @@ def scrape_restaurant_page(url):
 
         return {
             'Name': name,
+            'Phone': phone,
+            'Website': address,
             'Google Stars': google_stars,
             'Google Reviews': google_reviews,
             'TripAdvisor Stars': tripadvisor_stars,
@@ -46,9 +48,7 @@ def scrape_restaurant_page(url):
             'Wanderlog Ranking': wanderlog_ranking,
             'Wanderlog List': wanderlog_list,
             'About': about_text,
-            'Address': address,
-            'Phone': phone,
-            'Website': website,
+            # 'Website': website,
             'Link': url
         }
     except Exception as e:
