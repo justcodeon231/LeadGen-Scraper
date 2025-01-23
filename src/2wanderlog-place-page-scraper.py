@@ -94,8 +94,9 @@ def extract_contact_info(soup):
 # Save data
 def save_results(data):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    csv_file = f'restaurant_details_{timestamp}.csv'
-    xlsx_file = f'restaurant_details_{timestamp}.xlsx'
+    output_name = input("Enter the base name for output files (without extension): ")
+    csv_file = f'{output_name}.csv'
+    xlsx_file = f'{output_name}.xlsx'
 
     try:
         df = pd.DataFrame(data)
@@ -108,7 +109,8 @@ def save_results(data):
 # Main process
 def main():
     logging.info("Starting scraper...")
-    restaurants = load_restaurant_links('wanderlog_restaurants.csv')
+    input_file = input("Enter the CSV file name (e.g., wanderlog_restaurants.csv): ")
+    restaurants = load_restaurant_links(input_file)
     detailed_data = []
 
     for index, row in restaurants.iterrows():
