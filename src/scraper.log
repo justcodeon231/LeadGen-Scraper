@@ -1,0 +1,255 @@
+2025-01-23 15:19:46,070 [INFO]: Starting scraper...
+2025-01-23 15:20:01,160 [INFO]: Loaded 151 restaurant links from output\EastLondonLeads.csv
+2025-01-23 15:20:01,161 [INFO]: Scraping 1/151: https://wanderlog.com/place/details/893386/grazia-fine-food--wine
+2025-01-23 15:20:03,499 [INFO]: Scraping 2/151: https://wanderlog.com/place/details/2902979/lavender-blue-market-café--deli
+2025-01-23 15:20:05,281 [INFO]: Scraping 3/151: https://wanderlog.com/place/details/2801883/the-beach-break
+2025-01-23 15:20:12,973 [INFO]: Scraping 4/151: https://wanderlog.com/place/details/233652/emerald-vale-brewery
+2025-01-23 15:20:15,101 [INFO]: Scraping 5/151: https://wanderlog.com/place/details/63711/sanook-cafe-east-london
+2025-01-23 15:20:18,116 [INFO]: Scraping 6/151: https://wanderlog.com/place/details/893394/ocean-basket-east-london
+2025-01-23 15:20:20,819 [INFO]: Scraping 7/151: https://wanderlog.com/place/details/2801908/café-neo
+2025-01-23 15:20:22,906 [INFO]: Scraping 8/151: https://wanderlog.com/place/details/2801860/cantina-and-craft
+2025-01-23 15:20:27,090 [INFO]: Scraping 9/151: https://wanderlog.com/place/details/893392/the-cow-and-milk-shed
+2025-01-23 15:20:29,319 [INFO]: Scraping 10/151: https://wanderlog.com/place/details/893395/pinecreek-restaurant--farmstall
+2025-01-23 15:20:32,099 [ERROR]: Failed to scrape https://wanderlog.com/place/details/893395/pinecreek-restaurant--farmstall: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:20:32,100 [INFO]: Scraping 11/151: https://wanderlog.com/place/details/2801853/jules-on-jarvis
+2025-01-23 15:20:34,837 [INFO]: Scraping 12/151: https://wanderlog.com/place/details/3472366/sea-spirit-fish-market-restaurant
+2025-01-23 15:20:37,428 [ERROR]: Failed to scrape https://wanderlog.com/place/details/3472366/sea-spirit-fish-market-restaurant: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:20:37,438 [INFO]: Scraping 13/151: https://wanderlog.com/place/details/3192615/the-grillroom
+2025-01-23 15:20:39,220 [INFO]: Scraping 14/151: https://wanderlog.com/place/details/893400/sanook-eatery
+2025-01-23 15:20:41,599 [INFO]: Scraping 15/151: https://wanderlog.com/place/details/893407/buccaneers
+2025-01-23 15:20:44,336 [ERROR]: Failed to scrape https://wanderlog.com/place/details/893407/buccaneers: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:20:44,336 [INFO]: Scraping 16/151: https://wanderlog.com/place/details/893388/the-cricketer
+2025-01-23 15:20:46,158 [INFO]: Scraping 17/151: https://wanderlog.com/place/details/2801895/guidos-beachfront
+2025-01-23 15:20:48,586 [ERROR]: Failed to scrape https://wanderlog.com/place/details/2801895/guidos-beachfront: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:20:48,586 [INFO]: Scraping 18/151: https://wanderlog.com/place/details/2802072/the-reef-café
+2025-01-23 15:20:51,520 [INFO]: Scraping 19/151: https://wanderlog.com/place/details/2801907/silver-eagle-spur-steak-ranch
+2025-01-23 15:20:55,812 [INFO]: Scraping 20/151: https://wanderlog.com/place/details/2801894/ginger--co
+2025-01-23 15:20:57,451 [INFO]: Scraping 21/151: https://wanderlog.com/place/details/7694484/john-dorys-hemingways-mall
+2025-01-23 15:20:59,257 [INFO]: Scraping 22/151: https://wanderlog.com/place/details/4466320/country-bumpkin-floradale
+2025-01-23 15:21:01,665 [ERROR]: Failed to scrape https://wanderlog.com/place/details/4466320/country-bumpkin-floradale: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:21:01,715 [INFO]: Scraping 23/151: https://wanderlog.com/place/details/9889044/irana-indian-cuisine
+2025-01-23 15:21:03,414 [ERROR]: Failed to scrape https://wanderlog.com/place/details/9889044/irana-indian-cuisine: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:21:03,415 [INFO]: Scraping 24/151: https://wanderlog.com/place/details/2801849/irana-indian-restaurant
+2025-01-23 15:21:07,041 [INFO]: Scraping 25/151: https://wanderlog.com/place/details/2801878/windmill-roadhouse
+2025-01-23 15:21:08,853 [INFO]: Scraping 26/151: https://wanderlog.com/place/details/2801940/mugg--bean
+2025-01-23 15:21:10,865 [INFO]: Scraping 27/151: https://wanderlog.com/place/details/2801896/shanghai-chinese-restaurant--sushi-bar
+2025-01-23 15:21:13,147 [INFO]: Scraping 28/151: https://wanderlog.com/place/details/2801889/heavenly-pancake-house
+2025-01-23 15:21:15,248 [INFO]: Scraping 29/151: https://wanderlog.com/place/details/2801934/table-58-brewing
+2025-01-23 15:21:17,035 [INFO]: Scraping 30/151: https://wanderlog.com/place/details/2801866/wimpy
+2025-01-23 15:21:19,869 [INFO]: Scraping 31/151: https://wanderlog.com/place/details/2943439/panarottis-hemingways
+2025-01-23 15:21:22,005 [INFO]: Scraping 32/151: https://wanderlog.com/place/details/2902997/cafe-felix
+2025-01-23 15:21:24,445 [ERROR]: Failed to scrape https://wanderlog.com/place/details/2902997/cafe-felix: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:21:24,446 [INFO]: Scraping 33/151: https://wanderlog.com/place/details/3001073/la-cuisinette
+2025-01-23 15:21:26,834 [INFO]: Scraping 34/151: https://wanderlog.com/place/details/893402/ciao-bella-cafe--pizzeria
+2025-01-23 15:21:28,631 [INFO]: Scraping 35/151: https://wanderlog.com/place/details/3001096/thyme-fusion-gin-bar--eatery
+2025-01-23 15:21:35,848 [ERROR]: Failed to scrape https://wanderlog.com/place/details/3001096/thyme-fusion-gin-bar--eatery: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:21:35,849 [INFO]: Scraping 36/151: https://wanderlog.com/place/details/3192635/brazas-portuguese-fusion
+2025-01-23 15:21:40,414 [INFO]: Scraping 37/151: https://wanderlog.com/place/details/3192626/abbotsford-arms
+2025-01-23 15:21:42,501 [ERROR]: Failed to scrape https://wanderlog.com/place/details/3192626/abbotsford-arms: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:21:42,502 [INFO]: Scraping 38/151: https://wanderlog.com/place/details/3001098/areena-quays-restaurant
+2025-01-23 15:21:45,629 [INFO]: Scraping 39/151: https://wanderlog.com/place/details/2801923/jade-garden-fusion-restaurant
+2025-01-23 15:21:50,044 [INFO]: Scraping 40/151: https://wanderlog.com/place/details/893406/key-largo
+2025-01-23 15:21:51,899 [INFO]: Scraping 41/151: https://wanderlog.com/place/details/3192645/mr-hydes-restaurant--pub
+2025-01-23 15:21:53,892 [ERROR]: Failed to scrape https://wanderlog.com/place/details/3192645/mr-hydes-restaurant--pub: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:21:53,893 [INFO]: Scraping 42/151: https://wanderlog.com/place/details/3192627/elahleni-food-and-braai
+2025-01-23 15:23:48,927 [INFO]: Starting scraper...
+2025-01-23 15:24:06,592 [INFO]: Loaded 151 restaurant links from output\EastLondonLeads.csv
+2025-01-23 15:24:06,617 [INFO]: Scraping 1/151: https://wanderlog.com/place/details/893386/grazia-fine-food--wine
+2025-01-23 15:24:12,633 [INFO]: Scraping 2/151: https://wanderlog.com/place/details/2902979/lavender-blue-market-café--deli
+2025-01-23 15:24:18,504 [INFO]: Scraping 3/151: https://wanderlog.com/place/details/2801883/the-beach-break
+2025-01-23 15:24:22,500 [INFO]: Scraping 4/151: https://wanderlog.com/place/details/233652/emerald-vale-brewery
+2025-01-23 15:24:27,034 [INFO]: Scraping 5/151: https://wanderlog.com/place/details/63711/sanook-cafe-east-london
+2025-01-23 15:24:32,168 [INFO]: Scraping 6/151: https://wanderlog.com/place/details/893394/ocean-basket-east-london
+2025-01-23 15:24:37,256 [INFO]: Scraping 7/151: https://wanderlog.com/place/details/2801908/café-neo
+2025-01-23 15:24:40,280 [INFO]: Scraping 8/151: https://wanderlog.com/place/details/2801860/cantina-and-craft
+2025-01-23 15:24:43,755 [INFO]: Scraping 9/151: https://wanderlog.com/place/details/893392/the-cow-and-milk-shed
+2025-01-23 15:24:48,359 [INFO]: Scraping 10/151: https://wanderlog.com/place/details/893395/pinecreek-restaurant--farmstall
+2025-01-23 15:24:52,095 [ERROR]: Failed to scrape https://wanderlog.com/place/details/893395/pinecreek-restaurant--farmstall: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:24:53,582 [INFO]: Scraping 11/151: https://wanderlog.com/place/details/2801853/jules-on-jarvis
+2025-01-23 15:24:57,352 [INFO]: Scraping 12/151: https://wanderlog.com/place/details/3472366/sea-spirit-fish-market-restaurant
+2025-01-23 15:25:02,822 [ERROR]: Failed to scrape https://wanderlog.com/place/details/3472366/sea-spirit-fish-market-restaurant: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:25:03,933 [INFO]: Scraping 13/151: https://wanderlog.com/place/details/3192615/the-grillroom
+2025-01-23 15:25:10,232 [INFO]: Scraping 14/151: https://wanderlog.com/place/details/893400/sanook-eatery
+2025-01-23 15:25:14,175 [INFO]: Scraping 15/151: https://wanderlog.com/place/details/893407/buccaneers
+2025-01-23 15:25:16,961 [ERROR]: Failed to scrape https://wanderlog.com/place/details/893407/buccaneers: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:25:19,016 [INFO]: Scraping 16/151: https://wanderlog.com/place/details/893388/the-cricketer
+2025-01-23 15:25:23,659 [INFO]: Scraping 17/151: https://wanderlog.com/place/details/2801895/guidos-beachfront
+2025-01-23 15:25:25,707 [ERROR]: Failed to scrape https://wanderlog.com/place/details/2801895/guidos-beachfront: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:25:28,624 [INFO]: Scraping 18/151: https://wanderlog.com/place/details/2802072/the-reef-café
+2025-01-23 15:25:34,342 [INFO]: Scraping 19/151: https://wanderlog.com/place/details/2801907/silver-eagle-spur-steak-ranch
+2025-01-23 15:25:39,328 [INFO]: Scraping 20/151: https://wanderlog.com/place/details/2801894/ginger--co
+2025-01-23 15:25:44,202 [INFO]: Scraping 21/151: https://wanderlog.com/place/details/7694484/john-dorys-hemingways-mall
+2025-01-23 15:25:48,485 [INFO]: Scraping 22/151: https://wanderlog.com/place/details/4466320/country-bumpkin-floradale
+2025-01-23 15:25:50,810 [ERROR]: Failed to scrape https://wanderlog.com/place/details/4466320/country-bumpkin-floradale: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:25:51,832 [INFO]: Scraping 23/151: https://wanderlog.com/place/details/9889044/irana-indian-cuisine
+2025-01-23 15:25:53,818 [ERROR]: Failed to scrape https://wanderlog.com/place/details/9889044/irana-indian-cuisine: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:25:55,366 [INFO]: Scraping 24/151: https://wanderlog.com/place/details/2801849/irana-indian-restaurant
+2025-01-23 15:26:02,280 [INFO]: Scraping 25/151: https://wanderlog.com/place/details/2801878/windmill-roadhouse
+2025-01-23 15:26:06,383 [INFO]: Scraping 26/151: https://wanderlog.com/place/details/2801940/mugg--bean
+2025-01-23 15:26:09,632 [INFO]: Scraping 27/151: https://wanderlog.com/place/details/2801896/shanghai-chinese-restaurant--sushi-bar
+2025-01-23 15:26:14,269 [INFO]: Scraping 28/151: https://wanderlog.com/place/details/2801889/heavenly-pancake-house
+2025-01-23 15:26:17,191 [INFO]: Scraping 29/151: https://wanderlog.com/place/details/2801934/table-58-brewing
+2025-01-23 15:26:22,251 [INFO]: Scraping 30/151: https://wanderlog.com/place/details/2801866/wimpy
+2025-01-23 15:26:28,466 [INFO]: Scraping 31/151: https://wanderlog.com/place/details/2943439/panarottis-hemingways
+2025-01-23 15:26:34,231 [INFO]: Scraping 32/151: https://wanderlog.com/place/details/2902997/cafe-felix
+2025-01-23 15:26:37,169 [ERROR]: Failed to scrape https://wanderlog.com/place/details/2902997/cafe-felix: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:26:39,907 [INFO]: Scraping 33/151: https://wanderlog.com/place/details/3001073/la-cuisinette
+2025-01-23 15:26:44,999 [INFO]: Scraping 34/151: https://wanderlog.com/place/details/893402/ciao-bella-cafe--pizzeria
+2025-01-23 15:26:50,464 [INFO]: Scraping 35/151: https://wanderlog.com/place/details/3001096/thyme-fusion-gin-bar--eatery
+2025-01-23 15:26:54,638 [ERROR]: Failed to scrape https://wanderlog.com/place/details/3001096/thyme-fusion-gin-bar--eatery: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:26:56,335 [INFO]: Scraping 36/151: https://wanderlog.com/place/details/3192635/brazas-portuguese-fusion
+2025-01-23 15:27:02,392 [INFO]: Scraping 37/151: https://wanderlog.com/place/details/3192626/abbotsford-arms
+2025-01-23 15:27:04,687 [ERROR]: Failed to scrape https://wanderlog.com/place/details/3192626/abbotsford-arms: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:27:06,925 [INFO]: Scraping 38/151: https://wanderlog.com/place/details/3001098/areena-quays-restaurant
+2025-01-23 15:27:11,177 [INFO]: Scraping 39/151: https://wanderlog.com/place/details/2801923/jade-garden-fusion-restaurant
+2025-01-23 15:27:19,178 [INFO]: Scraping 40/151: https://wanderlog.com/place/details/893406/key-largo
+2025-01-23 15:27:22,653 [INFO]: Scraping 41/151: https://wanderlog.com/place/details/3192645/mr-hydes-restaurant--pub
+2025-01-23 15:27:26,605 [ERROR]: Failed to scrape https://wanderlog.com/place/details/3192645/mr-hydes-restaurant--pub: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:27:29,510 [INFO]: Scraping 42/151: https://wanderlog.com/place/details/3192627/elahleni-food-and-braai
+2025-01-23 15:27:35,433 [INFO]: Scraping 43/151: https://wanderlog.com/place/details/3192657/mcdonalds-oxford-road-drive-thru
+2025-01-23 15:27:40,103 [INFO]: Scraping 44/151: https://wanderlog.com/explore/80591/mpongo-private-game-reserve
+2025-01-23 15:27:42,892 [ERROR]: Failed to scrape https://wanderlog.com/explore/80591/mpongo-private-game-reserve: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:27:44,832 [INFO]: Scraping 45/151: https://wanderlog.com/place/details/798614/quarry-lake-inn
+2025-01-23 15:27:51,171 [INFO]: Scraping 46/151: https://wanderlog.com/place/details/2979665/yang-yang-kitchen
+2025-01-23 15:27:53,775 [ERROR]: Failed to scrape https://wanderlog.com/place/details/2979665/yang-yang-kitchen: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:27:55,189 [INFO]: Scraping 47/151: https://wanderlog.com/place/details/2318543/blue-sea-guest-house
+2025-01-23 15:28:00,171 [INFO]: Scraping 48/151: https://wanderlog.com/place/details/823795/busa-guest-house
+2025-01-23 15:28:02,840 [ERROR]: Failed to scrape https://wanderlog.com/place/details/823795/busa-guest-house: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:28:04,293 [INFO]: Scraping 49/151: https://wanderlog.com/place/details/2979705/café-du-jardin
+2025-01-23 15:28:06,361 [ERROR]: Failed to scrape https://wanderlog.com/place/details/2979705/café-du-jardin: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:28:08,852 [INFO]: Scraping 50/151: https://wanderlog.com/place/details/893405/rocomamas-beacon-bay-crossing
+2025-01-23 15:28:15,289 [INFO]: Scraping 51/151: https://wanderlog.com/place/details/16895/east-london-museum
+2025-01-23 15:28:18,808 [INFO]: Scraping 52/151: https://wanderlog.com/place/details/16899/aquarium
+2025-01-23 15:28:21,191 [ERROR]: Failed to scrape https://wanderlog.com/place/details/16899/aquarium: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:28:22,875 [INFO]: Scraping 53/151: https://wanderlog.com/place/details/169567/ann-bryant-art-gallery
+2025-01-23 15:28:26,651 [ERROR]: Failed to scrape https://wanderlog.com/place/details/169567/ann-bryant-art-gallery: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:28:28,694 [INFO]: Scraping 54/151: https://wanderlog.com/place/details/2902979/lavender-blue-market-café--deli
+2025-01-23 15:28:28,694 [INFO]: Scraping 55/151: https://wanderlog.com/place/details/423567/inkwenkwezi-private-game-reserve
+2025-01-23 15:28:32,446 [ERROR]: Failed to scrape https://wanderlog.com/place/details/423567/inkwenkwezi-private-game-reserve: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:28:35,004 [INFO]: Scraping 56/151: https://wanderlog.com/place/details/893386/grazia-fine-food--wine
+2025-01-23 15:28:35,004 [INFO]: Scraping 57/151: https://wanderlog.com/place/details/16893/nahoon-beach
+2025-01-23 15:28:36,622 [ERROR]: Failed to scrape https://wanderlog.com/place/details/16893/nahoon-beach: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:28:39,026 [INFO]: Scraping 58/151: https://wanderlog.com/place/details/3020207/friesland-milk-bar
+2025-01-23 15:28:44,031 [INFO]: Scraping 59/151: https://wanderlog.com/place/details/10192874/areena-riverside-resort-caravan-park--private-game-reserve
+2025-01-23 15:28:49,031 [INFO]: Scraping 60/151: https://wanderlog.com/place/details/16901/the-lion-park
+2025-01-23 15:28:50,770 [ERROR]: Failed to scrape https://wanderlog.com/place/details/16901/the-lion-park: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:28:52,816 [INFO]: Scraping 61/151: https://wanderlog.com/place/details/561893/nahoon-estuary-nature-reserve
+2025-01-23 15:28:55,298 [ERROR]: Failed to scrape https://wanderlog.com/place/details/561893/nahoon-estuary-nature-reserve: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:28:57,680 [INFO]: Scraping 62/151: https://wanderlog.com/place/details/7473608/gonubie-main-beach
+2025-01-23 15:29:00,591 [ERROR]: Failed to scrape https://wanderlog.com/place/details/7473608/gonubie-main-beach: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:29:02,510 [INFO]: Scraping 63/151: https://wanderlog.com/place/details/6173208/hemingways-mall
+2025-01-23 15:29:08,753 [INFO]: Scraping 64/151: https://wanderlog.com/place/details/2304985/nahoon-reef
+2025-01-23 15:29:11,154 [ERROR]: Failed to scrape https://wanderlog.com/place/details/2304985/nahoon-reef: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:29:12,455 [INFO]: Scraping 65/151: https://wanderlog.com/place/details/10192816/eastern-beach
+2025-01-23 15:29:14,561 [ERROR]: Failed to scrape https://wanderlog.com/place/details/10192816/eastern-beach: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:29:17,547 [INFO]: Scraping 66/151: https://wanderlog.com/place/details/561896/gately-house
+2025-01-23 15:29:22,848 [INFO]: Scraping 67/151: https://wanderlog.com/place/details/2801878/windmill-roadhouse
+2025-01-23 15:29:22,848 [INFO]: Scraping 68/151: https://wanderlog.com/place/details/893395/pinecreek-restaurant--farmstall
+2025-01-23 15:29:27,029 [ERROR]: Failed to scrape https://wanderlog.com/place/details/893395/pinecreek-restaurant--farmstall: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:29:29,311 [INFO]: Scraping 69/151: https://wanderlog.com/place/details/233652/emerald-vale-brewery
+2025-01-23 15:29:29,311 [INFO]: Scraping 70/151: https://wanderlog.com/place/details/2801894/ginger--co
+2025-01-23 15:29:29,311 [INFO]: Scraping 71/151: https://wanderlog.com/place/details/169566/east-london-city-hall
+2025-01-23 15:29:36,593 [INFO]: Scraping 72/151: https://wanderlog.com/place/details/561898/hood-point-lighthouse
+2025-01-23 15:29:38,324 [ERROR]: Failed to scrape https://wanderlog.com/place/details/561898/hood-point-lighthouse: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:29:40,146 [INFO]: Scraping 73/151: https://wanderlog.com/place/details/10398449/east-london-golf-club
+2025-01-23 15:29:44,558 [INFO]: Scraping 74/151: https://wanderlog.com/place/details/893428/nahoon-corner
+2025-01-23 15:29:46,852 [ERROR]: Failed to scrape https://wanderlog.com/place/details/893428/nahoon-corner: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:29:48,831 [INFO]: Scraping 75/151: https://wanderlog.com/place/details/169569/bonza-bay-beach
+2025-01-23 15:29:50,585 [ERROR]: Failed to scrape https://wanderlog.com/place/details/169569/bonza-bay-beach: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:29:53,322 [INFO]: Scraping 76/151: https://wanderlog.com/place/details/893413/dassie-trail
+2025-01-23 15:29:55,713 [ERROR]: Failed to scrape https://wanderlog.com/place/details/893413/dassie-trail: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:29:57,668 [INFO]: Scraping 77/151: https://wanderlog.com/place/details/10525554/southern-cross-cruises
+2025-01-23 15:30:01,871 [INFO]: Scraping 78/151: https://wanderlog.com/place/details/10525541/umtiza-nature-reserve
+2025-01-23 15:30:04,438 [ERROR]: Failed to scrape https://wanderlog.com/place/details/10525541/umtiza-nature-reserve: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:30:07,088 [INFO]: Scraping 79/151: https://wanderlog.com/place/details/63711/sanook-cafe-east-london
+2025-01-23 15:30:07,088 [INFO]: Scraping 80/151: https://wanderlog.com/place/details/16903/east-london-zoo
+2025-01-23 15:30:11,057 [ERROR]: Failed to scrape https://wanderlog.com/place/details/16903/east-london-zoo: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:30:12,877 [INFO]: Scraping 81/151: https://wanderlog.com/place/details/16897/python-park-mashie-golf-course--snake-park
+2025-01-23 15:30:16,155 [ERROR]: Failed to scrape https://wanderlog.com/place/details/16897/python-park-mashie-golf-course--snake-park: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:30:18,972 [INFO]: Scraping 82/151: https://wanderlog.com/place/details/16898/marlene-neumann-exclusive-fine-art-photography
+2025-01-23 15:30:22,302 [INFO]: Scraping 83/151: https://wanderlog.com/place/details/169564/orient-beach
+2025-01-23 15:30:24,346 [ERROR]: Failed to scrape https://wanderlog.com/place/details/169564/orient-beach: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:30:27,214 [INFO]: Scraping 84/151: https://wanderlog.com/place/details/893386/grazia-fine-food--wine
+2025-01-23 15:30:27,214 [INFO]: Scraping 85/151: https://wanderlog.com/place/details/233652/emerald-vale-brewery
+2025-01-23 15:30:27,214 [INFO]: Scraping 86/151: https://wanderlog.com/place/details/2902979/lavender-blue-market-café--deli
+2025-01-23 15:30:27,214 [INFO]: Scraping 87/151: https://wanderlog.com/place/details/893395/pinecreek-restaurant--farmstall
+2025-01-23 15:30:29,581 [ERROR]: Failed to scrape https://wanderlog.com/place/details/893395/pinecreek-restaurant--farmstall: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:30:32,362 [INFO]: Scraping 88/151: https://wanderlog.com/place/details/2801853/jules-on-jarvis
+2025-01-23 15:30:32,362 [INFO]: Scraping 89/151: https://wanderlog.com/place/details/2801883/the-beach-break
+2025-01-23 15:30:32,362 [INFO]: Scraping 90/151: https://wanderlog.com/place/details/3472366/sea-spirit-fish-market-restaurant
+2025-01-23 15:30:34,211 [ERROR]: Failed to scrape https://wanderlog.com/place/details/3472366/sea-spirit-fish-market-restaurant: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:30:35,547 [INFO]: Scraping 91/151: https://wanderlog.com/place/details/3192615/the-grillroom
+2025-01-23 15:30:35,547 [INFO]: Scraping 92/151: https://wanderlog.com/place/details/63711/sanook-cafe-east-london
+2025-01-23 15:30:35,547 [INFO]: Scraping 93/151: https://wanderlog.com/place/details/893400/sanook-eatery
+2025-01-23 15:30:35,547 [INFO]: Scraping 94/151: https://wanderlog.com/place/details/2801908/café-neo
+2025-01-23 15:30:35,547 [INFO]: Scraping 95/151: https://wanderlog.com/place/details/2801860/cantina-and-craft
+2025-01-23 15:30:35,557 [INFO]: Scraping 96/151: https://wanderlog.com/place/details/893388/the-cricketer
+2025-01-23 15:30:35,559 [INFO]: Scraping 97/151: https://wanderlog.com/place/details/2801907/silver-eagle-spur-steak-ranch
+2025-01-23 15:30:35,561 [INFO]: Scraping 98/151: https://wanderlog.com/place/details/893394/ocean-basket-east-london
+2025-01-23 15:30:35,565 [INFO]: Scraping 99/151: https://wanderlog.com/place/details/893407/buccaneers
+2025-01-23 15:30:38,316 [ERROR]: Failed to scrape https://wanderlog.com/place/details/893407/buccaneers: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:30:39,917 [INFO]: Scraping 100/151: https://wanderlog.com/place/details/893392/the-cow-and-milk-shed
+2025-01-23 15:30:39,917 [INFO]: Scraping 101/151: https://wanderlog.com/place/details/2801895/guidos-beachfront
+2025-01-23 15:30:42,497 [ERROR]: Failed to scrape https://wanderlog.com/place/details/2801895/guidos-beachfront: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:30:45,108 [INFO]: Scraping 102/151: https://wanderlog.com/place/details/2802072/the-reef-café
+2025-01-23 15:30:45,108 [INFO]: Scraping 103/151: https://wanderlog.com/place/details/2801894/ginger--co
+2025-01-23 15:30:45,108 [INFO]: Scraping 104/151: https://wanderlog.com/place/details/3560332/the-bistro
+2025-01-23 15:30:47,991 [ERROR]: Failed to scrape https://wanderlog.com/place/details/3560332/the-bistro: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:30:50,323 [INFO]: Scraping 105/151: https://wanderlog.com/place/details/893402/ciao-bella-cafe--pizzeria
+2025-01-23 15:30:50,323 [INFO]: Scraping 106/151: https://wanderlog.com/place/details/2801923/jade-garden-fusion-restaurant
+2025-01-23 15:30:50,323 [INFO]: Scraping 107/151: https://wanderlog.com/place/details/7694484/john-dorys-hemingways-mall
+2025-01-23 15:30:50,323 [INFO]: Scraping 108/151: https://wanderlog.com/place/details/9989202/the-kitchen-table-east-london
+2025-01-23 15:30:56,582 [INFO]: Scraping 109/151: https://wanderlog.com/place/details/9889786/saffron-family-kitchen
+2025-01-23 15:31:00,828 [ERROR]: Failed to scrape https://wanderlog.com/place/details/9889786/saffron-family-kitchen: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:31:03,343 [INFO]: Scraping 110/151: https://wanderlog.com/place/details/9889783/the-kings-grill
+2025-01-23 15:31:06,369 [ERROR]: Failed to scrape https://wanderlog.com/place/details/9889783/the-kings-grill: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:31:07,753 [INFO]: Scraping 111/151: https://wanderlog.com/place/details/2801849/irana-indian-restaurant
+2025-01-23 15:31:07,753 [INFO]: Scraping 112/151: https://wanderlog.com/place/details/2801878/windmill-roadhouse
+2025-01-23 15:31:07,753 [INFO]: Scraping 113/151: https://wanderlog.com/place/details/2801940/mugg--bean
+2025-01-23 15:31:07,753 [INFO]: Scraping 114/151: https://wanderlog.com/place/details/2801896/shanghai-chinese-restaurant--sushi-bar
+2025-01-23 15:31:07,763 [INFO]: Scraping 115/151: https://wanderlog.com/place/details/2801889/heavenly-pancake-house
+2025-01-23 15:31:07,766 [INFO]: Scraping 116/151: https://wanderlog.com/place/details/2801866/wimpy
+2025-01-23 15:31:07,771 [INFO]: Scraping 117/151: https://wanderlog.com/place/details/2943439/panarottis-hemingways
+2025-01-23 15:31:07,774 [INFO]: Scraping 118/151: https://wanderlog.com/place/details/893405/rocomamas-beacon-bay-crossing
+2025-01-23 15:31:07,777 [INFO]: Scraping 119/151: https://wanderlog.com/place/details/2902985/john-dorys-beacon-bay
+2025-01-23 15:31:09,855 [ERROR]: Failed to scrape https://wanderlog.com/place/details/2902985/john-dorys-beacon-bay: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:31:12,001 [INFO]: Scraping 120/151: https://wanderlog.com/place/details/2801873/plas-thai
+2025-01-23 15:31:14,131 [ERROR]: Failed to scrape https://wanderlog.com/place/details/2801873/plas-thai: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:31:16,078 [INFO]: Scraping 121/151: https://wanderlog.com/place/details/2903008/wykato-spur
+2025-01-23 15:31:21,470 [INFO]: Scraping 122/151: https://wanderlog.com/place/details/2801890/nandos-oxford-street-east-london
+2025-01-23 15:31:25,765 [INFO]: Scraping 123/151: https://wanderlog.com/place/details/2903207/las-vegas-spur
+2025-01-23 15:31:31,656 [INFO]: Scraping 124/151: https://wanderlog.com/place/details/3192684/rjs
+2025-01-23 15:31:34,020 [ERROR]: Failed to scrape https://wanderlog.com/place/details/3192684/rjs: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:31:36,425 [INFO]: Scraping 125/151: https://wanderlog.com/place/details/3001066/2-brothers-pizza-cambridge
+2025-01-23 15:31:40,942 [INFO]: Scraping 126/151: https://wanderlog.com/place/details/8541820/tappas-on-epsom
+2025-01-23 15:31:45,083 [ERROR]: Failed to scrape https://wanderlog.com/place/details/8541820/tappas-on-epsom: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:31:47,831 [INFO]: Scraping 127/151: https://wanderlog.com/place/details/7646400/salt
+2025-01-23 15:31:50,139 [ERROR]: Failed to scrape https://wanderlog.com/place/details/7646400/salt: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:31:52,661 [INFO]: Scraping 128/151: https://wanderlog.com/place/details/10717220/kfc-abbotsford
+2025-01-23 15:31:55,805 [INFO]: Scraping 129/151: https://wanderlog.com/place/details/2801896/shanghai-chinese-restaurant--sushi-bar
+2025-01-23 15:31:55,805 [INFO]: Scraping 130/151: https://wanderlog.com/place/details/2801895/guidos-beachfront
+2025-01-23 15:31:58,111 [ERROR]: Failed to scrape https://wanderlog.com/place/details/2801895/guidos-beachfront: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:32:00,846 [INFO]: Scraping 131/151: https://wanderlog.com/place/details/3192626/abbotsford-arms
+2025-01-23 15:32:03,285 [ERROR]: Failed to scrape https://wanderlog.com/place/details/3192626/abbotsford-arms: 'NoneType' object has no attribute 'get_text'
+2025-01-23 15:32:06,233 [INFO]: Scraping 132/151: https://wanderlog.com/place/details/3192671/mcdonalds-east-london-vincent-drive-thru
+2025-01-23 15:32:11,070 [INFO]: Scraping 133/151: https://wanderlog.com/place/details/3519838/steers
+2025-01-23 15:32:20,466 [INFO]: Scraping 134/151: https://wanderlog.com/place/details/7646401/romans-pizza-gonubie
+2025-01-23 15:32:29,564 [INFO]: Scraping 135/151: https://wanderlog.com/place/details/3192662/debonairs-pizza
+2025-01-23 15:32:35,163 [INFO]: Scraping 136/151: https://wanderlog.com/place/details/3519904/fishaways
+2025-01-23 15:32:40,261 [INFO]: Scraping 137/151: https://wanderlog.com/place/details/2801907/silver-eagle-spur-steak-ranch
+2025-01-23 15:32:40,261 [INFO]: Scraping 138/151: https://wanderlog.com/place/details/2903008/wykato-spur
+2025-01-23 15:32:40,261 [INFO]: Scraping 139/151: https://wanderlog.com/place/details/3192682/nandos-vincent-park
+2025-01-23 15:32:46,102 [INFO]: Scraping 140/151: https://wanderlog.com/place/details/2903022/nandos-amalinda-drive-thru
+2025-01-23 15:32:51,472 [INFO]: Scraping 141/151: https://wanderlog.com/place/details/2903073/wimpy
+2025-01-23 15:32:55,080 [INFO]: Scraping 142/151: https://wanderlog.com/place/details/3192636/mcdonalds-beacon-bay-drive-thru
+2025-01-23 15:33:10,021 [INFO]: Scraping 143/151: https://wanderlog.com/place/details/9867480/romans-pizza-cambridge-east-london
+2025-01-23 15:33:13,307 [INFO]: Scraping 144/151: https://wanderlog.com/place/details/3192665/mcdonalds-amalinda-drive-thru
+2025-01-23 15:33:18,818 [INFO]: Scraping 145/151: https://wanderlog.com/place/details/3192657/mcdonalds-oxford-road-drive-thru
+2025-01-23 15:33:18,818 [INFO]: Scraping 146/151: https://wanderlog.com/place/details/7628200/burger-king-kariega-corkwood-mall-drive-thru
+2025-01-23 15:33:24,647 [INFO]: Scraping 147/151: https://wanderlog.com/place/details/7823029/hungry-lion-gillwell-mall
+2025-01-23 15:33:30,821 [INFO]: Scraping 148/151: https://wanderlog.com/place/details/10717220/kfc-abbotsford
+2025-01-23 15:33:30,821 [INFO]: Scraping 149/151: https://wanderlog.com/place/details/3192667/zebros
+2025-01-23 15:33:33,780 [INFO]: Scraping 150/151: https://wanderlog.com/place/details/3192771/zebros
+2025-01-23 15:33:39,479 [INFO]: Scraping 151/151: https://wanderlog.com/place/details/10717222/hungry-lion-east-london-fleet-street
+2025-01-23 15:48:09,854 [INFO]: Data saved to EastLondonLeadDetails.csv and EastLondonLeadDetails.xlsx
+2025-01-23 15:48:09,854 [INFO]: Scraper finished successfully.

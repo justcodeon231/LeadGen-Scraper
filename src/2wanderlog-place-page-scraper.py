@@ -5,6 +5,7 @@ import logging
 import time
 from datetime import datetime
 import os
+import random
 
 # Setup logging
 logging.basicConfig(
@@ -121,6 +122,8 @@ def main():
             data = scrape_restaurant_page(row['Link'])
             if data:
                 detailed_data.append(data)
+            # Add a random delay between 1 and 3 seconds
+            time.sleep(random.uniform(1, 3))
 
     save_results(detailed_data)
     logging.info("Scraper finished successfully.")
