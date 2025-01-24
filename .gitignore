@@ -1,0 +1,26 @@
+# Ignore sensitive files
+*.env
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.properties
+*.config
+*.secret
+*.token
+*.credentials
+*.password
+*.backup
+*.bak
+*.log
+*.ini
+*.conf
+*.cfg
+*.json
+*.xml
+*.yaml
+*.yml
+*.md
