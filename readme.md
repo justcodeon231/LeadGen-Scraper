@@ -1,118 +1,137 @@
-# **Business Data Scraper and Outreach Email Generator**
+# **Business Data Scraper and Outreach Email Generator**  
 
-This application is designed to scrape restaurant or business data from the Wanderlog website and create personalized emails using AI. The workflow is seamless, combining data extraction, AI content generation, and email personalization to simplify outreach for businesses.
-
-## **Features**
-### **1. Wanderlog Data Scraper**
-- Extracts business information such as:
-  - Name
-  - Phone number
-  - Website
-  - Ratings (Google, TripAdvisor, Wanderlog)
-  - Description (About)
-  - Wanderlog ranking and list position
-  - Direct links to their pages
-- Saves the extracted data to **CSV** and **Excel** formats for easy handling.
-
-### **2. AI-Powered Email Generator**
-- **Personalized Summaries**: 
-  - Generates a concise business summary for each store using AI.
-- **Custom Email Creation**:
-  - Emails are tailored based on the type of website:
-    - `.co.za` domains: Inquire about who is responsible for the website.
-    - Facebook links: Propose benefits tailored to their business.
-    - Other domains: Focus on general optimization suggestions.
-- **Flexible Prompts**:
-  - The AI leverages business details from the scraped data to make the content engaging and informative.
+## **Overview**  
+This application is a powerful tool for scraping business or restaurant data from the Wanderlog website and generating personalized outreach emails using AI. The seamless workflow integrates data extraction, content generation, and email customization, enabling efficient and targeted communication for businesses.  
 
 ---
 
-## **Installation**
+## **Features**
 
-### **Prerequisites**
-1. **Python Version**: Ensure you have Python 3.7+ installed.
-2. **Libraries**: Install the following dependencies:
+### **1. Wanderlog Data Scraper**  
+- Extracts comprehensive business data, including:  
+  - Name  
+  - Phone number  
+  - Website  
+  - Ratings (Google, TripAdvisor, Wanderlog)  
+  - Description (About)  
+  - Wanderlog ranking and list position  
+  - Direct links to their pages  
+- Saves the extracted data to **CSV** and **Excel** formats for easy handling and future reference.  
+
+### **2. AI-Powered Email Generator**  
+- **Personalized Summaries**:  
+  - AI generates concise, tailored summaries for each business.  
+- **Custom Email Creation**:  
+  - Emails are crafted based on the website type:  
+    - `.co.za` domains: Queries about who manages the website.  
+    - Facebook links: Proposes benefits tailored to their social media presence.  
+    - Other domains: Focuses on optimization and general improvement suggestions.  
+- **Flexible Prompts**:  
+  - Prompts leverage business details from the scraped data to make emails engaging and personalized.  
+
+### **3. File Outputs**  
+- Generates three key files:  
+  - Raw data: `wanderlog_restaurants.csv` and `wanderlog_restaurants.xlsx`.  
+  - Final enriched file with summaries and emails: `enriched_data.xlsx`.  
+
+---
+
+## **Installation**  
+
+### **Prerequisites**  
+1. **Python Version**: Requires Python 3.7+  
+2. **Libraries**: Install dependencies via pip:  
    ```bash
    pip install pandas openpyxl requests beautifulsoup4 google-generativeai
-   ```
-3. **Google Gemini API Setup**:
-   - Obtain an API key for Google Gemini from the [Google Cloud Console](https://console.cloud.google.com/).
-   - Create a `config.ini` file in the root directory and include your API key:
+   ```  
+3. **Google Gemini API Setup**:  
+   - Obtain an API key from the [Google Cloud Console](https://console.cloud.google.com/).  
+   - Add the key to a `config.ini` file in the root directory:  
      ```ini
      [GoogleGeminiAPI]
      api_key = YOUR_API_KEY
-     ```
+     ```  
 
 ---
 
-## **How to Use**
+## **How to Use**  
 
-### **Step 1: Scrape Business Data**
-1. Update the `url` variable in the scraper script to the Wanderlog page of your choice.
-2. Run the scraper:
+### **Step 1: Scrape Business Data**  
+1. Update the `url` variable in `scraper.py` to your target Wanderlog page.  
+2. Run the scraper:  
    ```bash
    python scraper.py
-   ```
-3. Output files:
-   - `wanderlog_restaurants.csv`
-   - `wanderlog_restaurants.xlsx`
+   ```  
+3. Extracted data will be saved as:  
+   - `wanderlog_restaurants.csv`  
+   - `wanderlog_restaurants.xlsx`  
 
-### **Step 2: Generate AI-Powered Emails**
-1. Place the generated Excel file from the scraper in the same directory as the AI email generator script.
-2. Run the script:
+### **Step 2: Generate AI-Powered Emails**  
+1. Ensure the Excel file from Step 1 is in the same directory as `ai_email_generator.py`.  
+2. Run the email generator script:  
    ```bash
    python ai_email_generator.py
-   ```
-3. Output:
-   - A new Excel file with company summaries and tailored emails.
+   ```  
+3. The final enriched file (`enriched_data.xlsx`) will include AI-generated summaries and personalized emails.  
 
 ---
 
-## **Project Files**
-1. **`scraper.py`**: Handles scraping data from Wanderlog and saving it in Excel/CSV formats.
-2. **`ai_email_generator.py`**: Processes the Excel file, generates AI-powered summaries and emails, and saves the results.
-3. **`config.ini`**: Contains the Google Gemini API key.
-4. **Output Files**:
-   - `wanderlog_restaurants.csv`
-   - `wanderlog_restaurants.xlsx`
-   - `enriched_data.xlsx`: Final output with AI-generated content.
+## **Key Project Files**  
+1. **`scraper.py`**: Handles data scraping from Wanderlog.  
+2. **`ai_email_generator.py`**: Processes scraped data and generates summaries/emails using AI.  
+3. **`config.ini`**: Contains your Google Gemini API key.  
+4. **Output Files**:  
+   - `wanderlog_restaurants.csv`  
+   - `wanderlog_restaurants.xlsx`  
+   - `enriched_data.xlsx`  
 
 ---
 
-## **Customization**
-- **Scraper**:
-  - Modify the `url` variable to scrape different Wanderlog pages.
-  - Adjust the scraper to include additional fields if needed.
-- **AI Prompts**:
-  - Edit the prompt templates in `ai_email_generator.py` to match your tone and style.
-- **Output**:
-  - Modify the script to adjust the structure of the output Excel file if necessary.
+## **Customization**  
+
+- **Scraper Configuration**:  
+  - Update the `url` variable in `scraper.py` to scrape different Wanderlog pages.  
+  - Add new fields by modifying the `scrape_restaurant_page` function.  
+
+- **AI Prompt Templates**:  
+  - Modify the prompts in `ai_email_generator.py` to customize the tone and style of generated emails.  
+
+- **File Outputs**:  
+  - Adjust the structure of output Excel files to match specific needs.  
 
 ---
 
-## **Example Workflow**
-### **Input (Excel File)**:
-| Name       | Phone         | Website               | About                      | Link                           |
-|------------|---------------|-----------------------|----------------------------|--------------------------------|
-| Example A  | +27 123 4567  | exampleA.co.za        | A family restaurant...     | https://wanderlog.com/...      |
-| Example B  | +27 987 6543  | facebook.com/exampleB | A modern café...           | https://wanderlog.com/...      |
+## **Example Workflow**  
 
-### **Output (Enriched Excel File)**:
-| Name       | Summary                          | Email                                                                                       |
-|------------|----------------------------------|---------------------------------------------------------------------------------------------|
-| Example A  | Example A is a family...         | Dear Example A, I’m Leo from LiiStudios... Who is responsible for maintaining your website? |
-| Example B  | Example B is a modern café...    | Dear Example B, I’m Leo from LiiStudios... Let me propose an idea for improving your...    |
+### **Input Data (Scraped Excel File)**:  
+| Name       | Phone         | Website               | About                      | Link                           |  
+|------------|---------------|-----------------------|----------------------------|--------------------------------|  
+| Example A  | +27 123 4567  | exampleA.co.za        | A family restaurant...     | https://wanderlog.com/...      |  
+| Example B  | +27 987 6543  | facebook.com/exampleB | A modern café...           | https://wanderlog.com/...      |  
 
----
-
-## **Contribution**
-Feel free to submit issues or pull requests if you want to improve this project or add new features.
+### **Output Data (Enriched Excel File)**:  
+| Name       | Summary                          | Email                                                                                       |  
+|------------|----------------------------------|---------------------------------------------------------------------------------------------|  
+| Example A  | Example A is a family...         | Dear Example A, I’m Leo from LiiStudios... Who is responsible for maintaining your website? |  
+| Example B  | Example B is a modern café...    | Dear Example B, I’m Leo from LiiStudios... Let me propose an idea for improving your...    |  
 
 ---
 
-## **License**
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+## **Error Handling**  
+- **Duplicate Data**: Avoids duplicate entries in output files.  
+- **API Failures**: Retries up to three times for AI errors.  
+- **Request Timeouts**: Automatically retries failed web page requests.  
 
 ---
 
-Let me know if you'd like me to customize this further!
+## **Contribution**  
+We welcome contributions! Feel free to submit issues, feature requests, or pull requests to enhance the project.  
+
+---
+
+## **License**  
+This project is licensed under the MIT License.  
+
+---  
+
+Let me know if you need further edits or enhancements!
