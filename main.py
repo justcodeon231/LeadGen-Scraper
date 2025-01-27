@@ -282,3 +282,47 @@ def main_combined():
 
 if __name__ == "__main__":
     main_combined()
+    # Ask for the base name for output files
+    base_name = input("Please enter the base name for output files: ")
+    output_dir = os.path.join('output', base_name)
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Ask for the URL to scrape categories
+    target_url = input("Please enter the URL to scrape categories: ")
+    category_selector = '.row.mt-n2.mx-n1 .col-6.col-sm-4.col-md-4.col-lg-4.col-xl-4.mt-2.px-1 a'
+    categories = scrape_website(target_url, category_selector, f'{base_name}_categories.csv')
+    
+    all_restaurant_data = []
+    for category in categories:
+        logging.info(f"Scraping category: {category['text']} - {category['href']}")
+        restaurant_df = scrape_restaurants(category['href'])
+        all_restaurant_data.append(restaurant_df)
+        time.sleep(random.uniform(1, 3))
+    
+    # Combine all restaurant data into one DataFrame
+    combined_restaurant_df = pd.concat(all_restaurant_data, ignore_index=True)
+    
+    # Save the combined restaurant links to CSV
+    output_csv = f'{base_name}_all_restaurants.csv'
+    combined_restaurant_df.to_csv(os.path.join(output_dir, output_csv), index=False)
+    
+    # Load the saved CSV and scrape each restaurant link
+    restaurants = load_restaurant_links(output_csv)
+    detailed_data = []
+    processed_links = set()
+    for index, row in restaurants.iterrows():
+        logging.info(f"Scraping {index + 1}/{len(restaurants)}: {row['Link']}")
+        if row['Link'] not in processed_links:
+            data = scrape_restaurant_page(row['Link'])
+            if data:
+                detailed_data.append(data)
+                processed_links.add(row['Link'])
+            time.sleep(random.uniform(1, 3))
+    save_results(detailed_data, output_dir, base_name)
+
+    # Example usage of AI response generation
+    configure_api()
+    input_file = os.path.join(output_dir, f"{base_name}.xlsx")
+    output_file = os.path.join(output_dir, f"{base_name}_final.xlsx")
+    process_excel(input_file, output_file)
+    logging.info("Combined application finished successfully.")
